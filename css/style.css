@@ -547,6 +547,10 @@ body {
     width: 100%;
 }
 
+.location iframe + iframe {
+    margin-top: 2rem;
+}
+
 .location h1 {
     font-size: 2rem;
     color: #444;
@@ -848,7 +852,7 @@ footer .icon-infos {
 
 footer .about-services-follow {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3.6rem;
     padding-top: 10rem;
 }
@@ -864,6 +868,7 @@ footer h2 {
 
 footer .footer-about,
 footer .footer-services,
+footer .footer-mission-values,
 footer .footer-follow {
     display: flex;
     flex-direction: column;
@@ -988,13 +993,13 @@ footer .social-medias i.active {
     }
 }
 
-@media (max-width: 519px) {
+@media (max-width: 550px) {
     .area-infos .contact-infos .email {
         display: none;
     }
 }
 
-@media (max-width: 319px) {
+@media (max-width: 340px) {
     .area-infos .contact-infos .phone {
         display: none;
     }
@@ -1061,6 +1066,12 @@ footer .social-medias i.active {
 }
 
 /* Responsividade Footer */
+@media (max-width: 1300px) {
+    footer .about-services-follow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 1112px) {
 
     footer .logo,
