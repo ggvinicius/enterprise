@@ -8,6 +8,8 @@
 
 :root {
     font-size: 62.5%;
+    --primary-color: #fff;
+    --secondary-color: #003366;
 }
 
 html {
@@ -55,7 +57,7 @@ body {
 }
 
 .area-infos {
-    background-color: #1f1e17;
+    background-color: var(--secondary-color);
     padding: 1.6rem 0;
 }
 
@@ -72,7 +74,7 @@ body {
 }
 
 .area-infos .infos i:first-child {
-    color: #eece38;
+    color: var(--primary-color);
 }
 
 .area-infos .contact-infos {
@@ -105,7 +107,7 @@ body {
 
 .area-infos .social-medias i:hover {
     cursor: pointer;
-    color: #eece38;
+    color: var(--primary-color);
 }
 
 /* Area logo e endereço */
@@ -153,7 +155,7 @@ body {
 }
 
 .logo-address .icon-infos .icon {
-    background-color: #eece38;
+    background-color: var(--secondary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -161,6 +163,7 @@ body {
 }
 
 .logo-address .icon-infos i {
+    color: #fff;
     font-size: 2.4rem;
 }
 
@@ -212,16 +215,16 @@ body {
 }
 
 .menu nav li.home {
-    color: #000;
-    background-color: #eece38;
+    background-color: var(--secondary-color);
 }
 
 .menu nav li.home a {
+    color: #fff;
     font-weight: 700;
 }
 
 .menu nav li.home:hover {
-    background-color: rgb(228, 195, 47);
+    background-color: #022446;
 }
 
 .menu nav span:hover {
@@ -380,7 +383,7 @@ body {
 }
 
 .about-us .about-infos .border-l {
-    border-left: .4rem solid #eece38;
+    border-left: .4rem solid var(--secondary-color);
     padding-left: 2rem;
 }
 
@@ -392,7 +395,7 @@ body {
 /* Services */
 .services {
     padding: 8rem 0;
-    background-color: #1f1e17;
+    background-color: var(--secondary-color);
     color: #fff;
 }
 
@@ -405,7 +408,7 @@ body {
 .services .p-border {
     font-size: 2rem;
     border-bottom: 1px solid rgba(238, 206, 56, .6);
-    color: #eece38;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -424,7 +427,7 @@ body {
 }
 
 .services .wrapper-service {
-    background-color: #181712;
+    background-color: #022446;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -432,14 +435,14 @@ body {
     padding: 3.2rem;
     border-radius: .8rem;
     cursor: pointer;
-    border-bottom: 2px solid #eece38;
+    border-bottom: 2px solid var(--primary-color);
     transition: .2s;
 }
 
 .services .wrapper-service:hover {
-    background-color: #eece38;
-    color: #181712;
-    border-bottom: 2px solid #181712;
+    background-color: #001a35;
+    color: #ddd;
+    border-bottom: 2px solid #ddd;
 }
 
 .services .wrapper-service:hover i {
@@ -447,12 +450,12 @@ body {
 }
 
 .services .wrapper-service:hover i {
-    color: #181712;
+    color: var(--primary-color);
     transform: scale(1.3);
 }
 
 .services .wrapper-service i {
-    color: #eece38;
+    color: var(--primary-color);
     font-size: 4rem;
 }
 
@@ -662,7 +665,7 @@ body {
 
 .contact input:focus,
 .contact textarea:focus {
-    outline: 1px solid #eece38;
+    outline: 1px solid var(--secondary-color);
     background-color: #eceae0;
 }
 
@@ -670,7 +673,8 @@ body {
     padding: 2rem 0;
     width: 50%;
     border: 0;
-    background-color: #eece38;
+    background-color: var(--secondary-color);
+    color: #fff;
     border-radius: .4rem;
     font-weight: 700;
     transition: .2s;
@@ -678,7 +682,7 @@ body {
 }
 
 .contact input[type="submit"]:hover {
-    background-color: #f5d64c;
+    background-color: #022446;;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -692,7 +696,7 @@ body {
 }
 
 .contact .area-contact-infos {
-    background-color: #1f1e17;
+    background-color: var(--secondary-color);
     color: #fff;
     border-radius: 1.2rem;
     display: flex;
@@ -731,7 +735,7 @@ body {
 
 .contact .icon-infos .icon {
     align-self: flex-start;
-    background-color: #eece38;
+    background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -771,16 +775,16 @@ body {
 }
 
 .policies .policie-infos {
-    background-color: #1f1e17;
+    background-color: var(--secondary-color);
     color: #fff;
     border-radius: .4rem;
 }
 
 .policies .policie-infos a {
     display: block;
-    padding: .8rem;
+    padding: 1.2rem;
     text-decoration: none;
-    color: #eece38;
+    color: var(--primary-color);
     font-weight: 600;
     font-size: 2rem;
 }
@@ -788,7 +792,6 @@ body {
 .policies .policie-infos p {
     text-decoration: none;
     padding: .8rem;
-    color: #fff;
     line-height: 2.4rem;
     max-width: 100rem;
 }
@@ -803,7 +806,7 @@ body {
 
 /* Footer */
 footer {
-    background-color: #1f1e17;
+    background-color: var(--secondary-color);
 }
 
 footer .area-footer {
@@ -831,7 +834,7 @@ footer .logo a {
 
 footer .logo i {
     font-size: 6rem;
-    color: #eece38;
+    color: var(--primary-color);
     text-shadow: 1px 1px 0px #000;
 }
 
@@ -842,7 +845,7 @@ footer .icon-infos {
 
 footer .icon-infos .icon {
     align-self: flex-start;
-    background-color: #eece38;
+    background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -854,11 +857,11 @@ footer .icon-infos i {
 }
 
 footer .icon-infos p {
-    color: #ccc;
+    color: #fff;
 }
 
 footer .icon-infos span {
-    color: #fff;
+    color: #ddd;
 }
 
 footer .logo,
@@ -875,7 +878,7 @@ footer .about-services-follow {
 }
 
 footer p {
-    color: #ccc;
+    color: #ddd;
     line-height: 3.2rem;
 }
 
@@ -910,11 +913,11 @@ footer .links i {
 
 footer .links a {
     text-decoration: none;
-    color: #ccc;
+    color: #ddd;
 }
 
 footer .links a:hover {
-    color: #eece38;
+    color: var(--primary-color);
 }
 
 
@@ -934,12 +937,12 @@ footer .social-medias i {
 
 footer .social-medias i:hover {
     cursor: pointer;
-    background-color: #eece38;
+    background-color: var(--primary-color);
     color: #000;
 }
 
 footer .social-medias i.active {
-    background-color: #eece38;
+    background-color: var(--primary-color);
     color: #000;
 }
 
