@@ -990,10 +990,18 @@ footer .social-medias i.active {
         display: block;
     }
 
+    nav.container {
+        padding: 0;
+    }
+
     .menu nav ul {
         position: absolute;
         width: 100%;
         flex-direction: column;
+    }
+
+    .menu nav li {
+        border-right: 0;
     }
 
     .menu .visible {
