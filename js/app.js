@@ -124,3 +124,8 @@ const handleValidateInputs = e => {
 }
 
 form.addEventListener('submit', handleValidateInputs)
+
+// Slides logos
+const copyLogosSlide = document.querySelector('[data-js="logos-slide"]')
+const areaLogosSlide = document.querySelector('[data-js="area-logos-slide"]')
+areaLogosSlide.appendChild(copyLogosSlide.cloneNode(true))
