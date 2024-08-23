@@ -730,6 +730,7 @@ body {
 }
 
 .contact .icon-infos .icon {
+    align-self: flex-start;
     background-color: #eece38;
     border-radius: 50%;
     display: flex;
@@ -840,6 +841,7 @@ footer .icon-infos {
 }
 
 footer .icon-infos .icon {
+    align-self: flex-start;
     background-color: #eece38;
     border-radius: 50%;
     display: flex;
