@@ -497,6 +497,7 @@ body {
     overflow: hidden;
     padding: 2rem 0;
     white-space: nowrap;
+    width: 100%;
 }
 
 .clients .wrapper-logos::before,
@@ -504,7 +505,7 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    width: 24rem;
+    width: 12rem;
     height: 100%;
     z-index: 2;
 }
@@ -530,7 +531,7 @@ body {
 
 .clients .logos-slide img {
     height: 3.6rem;
-    margin: 0 4rem;
+    margin: 0 2rem;
 }
 
 @keyframes slide-logos {
@@ -1008,6 +1009,16 @@ footer .social-medias i.active {
     }
 
     .carousel .wrapper-content p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .logo-address .logo i {
+        font-size: 4rem;
+    }
+
+    .logo-address .logo a {
         font-size: 2rem;
     }
 }
